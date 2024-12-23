@@ -27,7 +27,11 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
+<<<<<<< HEAD
 Home
+=======
+HTML
+>>>>>>> e3ac3e4b18a38712bf6d5fd093a4ea4cdd68d29f
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,8 +194,12 @@ Home
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+<<<<<<< HEAD
 css
 
+=======
+ CSS
+>>>>>>> e3ac3e4b18a38712bf6d5fd093a4ea4cdd68d29f
 body {
     font-family: 'Pacifico', cursive;
     margin: 0;
@@ -342,7 +350,14 @@ footer {
 ```
 
 ## OUTPUT:
+<<<<<<< HEAD
 ![alt text](ex101.png)
 ![alt text](ex102.png)
+=======
+![ex101](https://github.com/user-attachments/assets/62b7ec68-01e5-4dce-aa83-fa053f6290cf)
+![ex102](https://github.com/user-attachments/assets/aab6f4db-6a18-4518-af95-5c58eb19ee57)
+
+
+>>>>>>> e3ac3e4b18a38712bf6d5fd093a4ea4cdd68d29f
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
