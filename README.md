@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:25/12/24
+## Date:29/12/24
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -27,133 +27,129 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dribble.io</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <div class="container">
-        <a href="#Logo" class="navbar-brand mb-0 h1">
-          <img src="logo2.png" width="120" height="30" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a href="#" class="nav-link active" aria-current="page">Shots</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Designer</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sign up</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Sign in</a>
-            </li>
-          </ul>
-         
-          <div class="ms-auto">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-primary" type="submit">Search</button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#">Dribbble</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Discover</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Designers</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#">Projects</a></li>
+                </ul>
+                <input type="search" class="form-control w-auto me-3" placeholder="Search">
+                <a class="btn btn-outline-primary me-2" href="#">Sign in</a>
+                <a class="btn btn-primary" href="#">Sign Up</a>
+            </div>
         </div>
-      </div>
     </nav>
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold">Showcase Your Creativity</h1>
+            <p class="lead">Find inspiration, connect with creatives, and share your designs with the world.</p>
+            <a href="#popular" class="btn btn-light btn-lg">Explore Now</a>
+        </div>
+    </header>
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1>Dribbble</h1>
+            <p>Discover the world’s top designers & creatives</p>
+        </div>
+    </header>
 
-    <section class="text-center py-4 bg-dark text-white">
-      <div class="container">
-        <p class="lead fw-bold mb-4">What are you working on? Dribbble is show and tell for designers.</p>
-        <div class="d-inline-flex gap-2">
-          <a href="#" class="btn btn-primary">Learn More</a>
-          <a href="#" class="btn btn-outline-danger">Sign Up</a>
-        </div>
-      </div>
-    </section>
+    <main class="container my-4">
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="101.jpeg" class="card-img-top" alt="Design 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Aesthetic Sweatshirts</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container py-4">
-      <div class="row justify-content-center g-4">
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="101.jpeg" class="card-img-top" alt="Tshirts">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Aesthetic Sweatshirts</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="102.jpeg" class="card-img-top" alt="Design 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Combos</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="102.jpeg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">combos</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
+
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="103.jpeg" class="card-img-top" alt="Design 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sneakers</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="103.jpeg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Shoes</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="104.jpeg" class="card-img-top" alt="Design 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Boys Accessories</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="104.jpeg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Accessories</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="105.jpeg" class="card-img-top" alt="Design 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Hoodies</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="105.jpeg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Hoodies</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="106.jpeg" class="card-img-top" alt="Design 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Crocs</h5>
+                        <a href="#" class="btn btn-danger">View More</a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card shadow rounded-3">
-            <img src="106.jpeg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="card-title fw-bold">Crocs</h5>
-              <a href="#" class="btn btn-primary btn-sm">View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
+
+            
+    </main>
 
     <footer class="bg-dark text-white text-center py-3">
-      <h2 class="h6 m-0">Designed by PharsheenRahuman(24006746)</h2>
+        <p>&copy; 2024 Dribbble. All Rights Reserved.<br>
+                   Designed by PharsheenRahumanM.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>
 
 ```
 
 ## OUTPUT:
-![ex101](https://github.com/user-attachments/assets/c60d64ac-869c-4da7-a1d7-f96b8aafc02f)
+![webp1](https://github.com/user-attachments/assets/edb0e834-1765-4fd5-9e47-c391e7ab63f8)
 
-![ex102](https://github.com/user-attachments/assets/2a127ea1-6a0f-43cd-8975-d47a298bf88f)
+![webp2](https://github.com/user-attachments/assets/088b7bec-1cda-4db0-9fa7-6b5f9a191ad0)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
